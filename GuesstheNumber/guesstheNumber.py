@@ -13,14 +13,23 @@ def minigame():
     global again
     for guesstime in range (1,6):
         print("take a guess")
-        guess = int(input())
-        if guess < secretNumber :
-            print("Your guess is too low")
-        elif guess > secretNumber :
-            print("Your guess is too high")
-        else :
-            break #this happens when the player has guessed the right number
 
+        #loop in order the user to provide a valid number
+        while True:
+            try:
+                guess = int(input())  
+                if guess < secretNumber :
+                    print("Your guess is too low")
+                    break
+                elif guess > secretNumber :
+                    print("Your guess is too high")
+                    break
+                else :
+                    break #this happens when the player has guessed the right number
+            except :
+                print("Remember! We are looking for a number between 1 and 20")
+                
+    #restarting the game
     if guess == secretNumber :
         print("Welldone",name,"! You guessed the right number in", guesstime, "times!")
         print("Press 1 to play again or 2 to exit")
@@ -31,8 +40,10 @@ def minigame():
         again = input()
 #end of minigame  
 
+#initial game
 minigame()
 
+#loop to check if the user wants to continue the game
 while True:
     try:
         if int(again) == 1 :
