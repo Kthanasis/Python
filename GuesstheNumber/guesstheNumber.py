@@ -25,7 +25,7 @@ def minigame():
                     print("Your guess is too high")
                     break
                 else :
-                    break #this happens when the player has guessed the right number
+                    break #this happens when the player has guessed the right number or he/she gave a number x<1 || x>20
             except :
                 print("Remember! We are looking for a number between 1 and 20")
                 
