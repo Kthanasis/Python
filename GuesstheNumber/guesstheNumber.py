@@ -40,6 +40,9 @@ while True:
         elif int(again) == 2 :
             print("GoodBye Friend")
             break
+        else :
+            print("I like you little Rebel, let's play again")
+            minigame()
     except :
         print("I like you little Rebel, let's play again")
         minigame()
