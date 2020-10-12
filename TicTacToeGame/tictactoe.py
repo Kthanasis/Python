@@ -37,7 +37,10 @@ def playAgain():
     again = 2
     while not (again == 0 or again == 1):
         print('Do you want to play again? (1 for yes or 0 for no)')
-        again = int(input())
+        try:
+            again = int(input())
+        except:
+            print('You must type 1 or 0')
     if again == 1:
         return True
     else:
