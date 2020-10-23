@@ -5,7 +5,9 @@ import re, pyperclip
 
 #Create a regex for phone numbers
 phoneRegex = re.compile(r'''
-\d\d\d-\d\d\d-\d\d\d\d
+2\d\d-?\d\d-?\d-?\d\d\d\d
+#2XX-xxx-xxxx
+#2XXXX-XXXXX
 ''', re.VERBOSE)
 
 #Create a regex for email
