@@ -1,2 +1,2 @@
-@py C:\Users\Kosta\MyPythonScripts\phoneAndEmail.py %*
+@py C:\Users\<where you have stored it>\phoneAndEmail.py %*
 @pause
