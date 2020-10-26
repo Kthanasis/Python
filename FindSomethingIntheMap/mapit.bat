@@ -1,2 +1,2 @@
-@py.exe C:\Users\Kosta\MyPythonScripts\mapit.py %*
+@py.exe C:\Users\<where you have stored it>\mapit.py %*
 @pause
