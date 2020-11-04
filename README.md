@@ -10,3 +10,5 @@ the batch file is also usefull in order to simplify the use of it.
 # GuessTheNumber and TicTacToe are simple games using python3
 
 #CharacterCount counts the different characters in a given string
+
+#pdfcombine merges 2 pdfs into 1
