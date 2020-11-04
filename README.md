@@ -12,3 +12,5 @@ the batch file is also usefull in order to simplify the use of it.
 #CharacterCount counts the different characters in a given string
 
 #pdfcombine merges 2 pdfs into 1
+
+#mail.py how to send mail using python
